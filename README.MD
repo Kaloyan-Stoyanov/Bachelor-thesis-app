@@ -10,16 +10,16 @@ Features:
 
 2. Setup        
         
-2.1. In root folder, create a virtual environment:  
+In root folder, create a virtual environment:  
 - python -m venv venv     
    
-2.2 Activate environment:    
+Activate environment:    
 - venv/Scripts/Activate    
    
-2.3. Install the required dependencies:    
+Install the required dependencies:    
 - pip install -r requirements.txt     
    
-2.4. Run the application:   
+Run the application:   
 - py run.py      
    
 The app will be available at http://127.0.0.1:5000    
@@ -30,17 +30,18 @@ The app will be available at http://127.0.0.1:5000
 - Device Statistics: View real-time statistics such as toggle counts and temperature changes.
 
 4. Testing
-4.1. To run unit tests for the application 
+To run unit tests for the application 
 - pytest test_app.py
 
-4.2. To run end-to-end tests using Playwright
-4.2.1. Install playwright:
+To run end-to-end tests using Playwright   
+   
+Install playwright:
 - pip install playwright
 - playwright install   
    
-4.2.2. Start the application:
+Start the application:
 - py run.py   
    
-4.2.3. Open a new terminal in root folder, activate environment, and run test:  
+Open a new terminal in root folder, activate environment, and run test:  
 - venv/Scripts/Activate  
 - pytest test_e2e.py   
