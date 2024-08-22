@@ -29,7 +29,8 @@ The app will be available at http://127.0.0.1:5000
 - IoT Devices: Allows for toggling devices such as lights, locks, cameras, and thermostats.
 - Device Statistics: View real-time statistics such as toggle counts and temperature changes.
 
-4. Testing
+4. Testing     
+    
 To run unit tests for the application 
 - pytest test_app.py
 
