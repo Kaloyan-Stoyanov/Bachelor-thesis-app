@@ -1,11 +1,12 @@
-Smart Home Control Project
+Smart Home Control Project    
+    
 1. Overview
-This project is a Smart Home Control web application built using Flask, allowing users to interact with and control IoT devices such as lights, thermostats, cameras, and locks. The project contains a frontend built with HTML, CSS, and JavaScript, while the backend manages device states and actions using Flask routes.
-Features
-- Device Control: Toggle lights, locks, and cameras on and off.
-- Thermostat Management: View and set the temperature of smart thermostats.
-- Statistics: View device statistics, such as toggle counts and temperature changes.
-- Responsive Design: The frontend is designed to be responsive and user-friendly across devices.
+This project is a Smart Home Control web application built using Flask, allowing users to interact with and control IoT devices such as lights, thermostats, cameras, and locks. The project contains a frontend built with HTML, CSS, and JavaScript, while the backend manages device states and actions using Flask routes.    
+Features:   
+- Device Control: Toggle lights, locks, and cameras on and off.   
+- Thermostat Management: View and set the temperature of smart thermostats.   
+- Statistics: View device statistics, such as toggle counts and temperature changes.   
+- Responsive Design: The frontend is designed to be responsive and user-friendly across devices.   
 
 2. Setup        
         
