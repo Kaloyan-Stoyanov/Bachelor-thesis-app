@@ -7,32 +7,33 @@ Features
 - Statistics: View device statistics, such as toggle counts and temperature changes.
 - Responsive Design: The frontend is designed to be responsive and user-friendly across devices.
 
-2. Setup
-In root folder, create a virtual environment:
-- python -m venv venv
-Activate environment: 
-- venv/Scripts/Activate
-Install the required dependencies:
-- pip install -r requirements.txt
-Run the application:  
-- py run.py
-The app will be available at http://127.0.0.1:5000
-
+2. Setup        
+        
+2.1. In root folder, create a virtual environment:  
+- python -m venv venv   
+2.2 Activate environment:    
+- venv/Scripts/Activate  
+2.3. Install the required dependencies:    
+- pip install -r requirements.txt   
+2.4. Run the application:   
+- py run.py    
+The app will be available at http://127.0.0.1:5000    
+     
 3. Usage
 - Home Page: Displays a grid of commonly used devices such as lights, thermostats, and locks.
 - IoT Devices: Allows for toggling devices such as lights, locks, cameras, and thermostats.
 - Device Statistics: View real-time statistics such as toggle counts and temperature changes.
 
 4. Testing
-To run unit tests for the application 
+4.1. To run unit tests for the application 
 - pytest test_app.py
 
-To run end-to-end tests using Playwright
-Install playwright:
+4.2. To run end-to-end tests using Playwright
+4.2.1. Install playwright:
 - pip install playwright
 - playwright install
-Start the application:
+4.2.2. Start the application:
 - py run.py 
-Open a new terminal in root folder, activate environment, and run test:
+4.2.3. Open a new terminal in root folder, activate environment, and run test:
 - venv/Scripts/Activate
 - pytest test_e2e.py
