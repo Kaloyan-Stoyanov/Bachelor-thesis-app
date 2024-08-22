@@ -1,0 +1,25 @@
+<!-- templates/thermostats.html -->
+{% extends "base.html" %}
+
+{% block content %}
+    <h2>Control Thermostats</h2>
+    <div class="device-box">
+        <h3>Thermostat 1</h3>
+        <button class="device-button" onclick="getDeviceStatus('thermostat1')">Get Thermostat 1 Status</button>
+        <p id="thermostat1-status" class="status-text">Thermostat 1 Status: Unknown</p>
+
+        <input type="number" id="thermostat1-temp" placeholder="Set Temp for Thermostat 1" min="15" max="30" step="1" value="22">
+        <input type="range" id="thermostat1-slider" min="15" max="30" step="1" value="22" oninput="syncTempInput('thermostat1')">
+        <button class="device-button" onclick="setTemperature('thermostat1')">Set Thermostat 1 Temperature</button>
+    </div>
+
+    <div class="device-box">
+        <h3>Thermostat 2</h3>
+        <button class="device-button" onclick="getDeviceStatus('thermostat2')">Get Thermostat 2 Status</button>
+        <p id="thermostat2-status" class="status-text">Thermostat 2 Status: Unknown</p>
+
+        <input type="number" id="thermostat2-temp" placeholder="Set Temp for Thermostat 2" min="15" max="30" step="1" value="22">
+        <input type="range" id="thermostat2-slider" min="15" max="30" step="1" value="22" oninput="syncTempInput('thermostat2')">
+        <button class="device-button" onclick="setTemperature('thermostat2')">Set Thermostat 2 Temperature</button>
+    </div>
+{% endblock %}

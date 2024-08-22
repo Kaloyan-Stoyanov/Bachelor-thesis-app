@@ -1,0 +1,28 @@
+<!-- templates/base.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Home Control</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Smart Home Control</h1>
+    </header>
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <nav id="navbar">
+        <ul>
+            <li><a href="{{ url_for('main.home') }}" class="nav-button{% if request.endpoint == 'main.home' %} active{% endif %}">Home</a></li>
+            <li><a href="{{ url_for('main.iot') }}" class="nav-button{% if request.endpoint == 'main.iot' %} active{% endif %}">IoT Devices</a></li>
+            <li><a href="{{ url_for('main.stats') }}" class="nav-button{% if request.endpoint == 'main.stats' %} active{% endif %}">Stats</a></li>
+        </ul>
+    </nav>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

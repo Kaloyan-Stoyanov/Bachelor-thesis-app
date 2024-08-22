@@ -1,0 +1,11 @@
+<!-- templates/lights.html -->
+{% extends "base.html" %}
+
+{% block content %}
+    <h2>Control Lights</h2>
+    <button class="device-button" onclick="toggleDevice('light1')">Toggle Light 1</button>
+    <p id="light1-status" class="status-text">Light 1 Status: Unknown</p>
+
+    <button class="device-button" onclick="toggleDevice('light2')">Toggle Light 2</button>
+    <p id="light2-status" class="status-text">Light 2 Status: Unknown</p>
+{% endblock %}

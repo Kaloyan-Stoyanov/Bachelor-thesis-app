@@ -1,0 +1,30 @@
+<!-- templates/home.html -->
+{% extends "base.html" %}
+
+{% block content %}
+    <h2>Most Used Devices</h2>
+    <div class="device-grid">
+        <!-- Light 1 Control Box -->
+        <div class="device-box">
+            <h3>Light 1</h3>
+            <button class="device-button" onclick="toggleDevice('light1')">Toggle Light 1</button>
+            <p id="light1-status" class="status-text">Light 1 Status: Unknown</p>
+        </div>
+
+        <!-- Thermostat 1 Control Box -->
+        <div class="device-box">
+            <h3>Thermostat 1</h3>
+            <button class="device-button" onclick="getDeviceStatus('thermostat1')">Get Thermostat 1 Status</button>
+            <p id="thermostat1-status" class="status-text">Thermostat 1 Status: Unknown</p>
+            <input type="number" id="thermostat1-temp" placeholder="Set Temp for Thermostat 1" min="10" max="30">
+            <button class="device-button" onclick="setTemperature('thermostat1')">Set Thermostat 1 Temperature</button>
+        </div>
+
+        <!-- Lock 1 Control Box -->
+        <div class="device-box">
+            <h3>Lock 1</h3>
+            <button class="device-button" onclick="toggleDevice('lock1')">Toggle Lock 1</button>
+            <p id="lock1-status" class="status-text">Lock 1 Status: Unknown</p>
+        </div>
+    </div>
+{% endblock %}

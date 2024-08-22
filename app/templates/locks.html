@@ -1,0 +1,11 @@
+<!-- templates/locks.html -->
+{% extends "base.html" %}
+
+{% block content %}
+    <h2>Control Door Locks</h2>
+    <button class="device-button" onclick="toggleDevice('lock1')">Toggle Lock 1</button>
+    <p id="lock1-status" class="status-text">Lock 1 Status: Unknown</p>
+
+    <button class="device-button" onclick="toggleDevice('lock2')">Toggle Lock 2</button>
+    <p id="lock2-status" class="status-text">Lock 2 Status: Unknown</p>
+{% endblock %}

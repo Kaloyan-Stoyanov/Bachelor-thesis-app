@@ -1,0 +1,33 @@
+<!-- templates/stats.html -->
+{% extends "base.html" %}
+
+{% block content %}
+    <h2>Device Stats</h2>
+    <form>
+        <label for="device-select">Select Device:</label>
+        <select id="device-select">
+            <option value="light1">Light 1</option>
+            <option value="light2">Light 2</option>
+            <option value="thermostat1">Thermostat 1</option>
+            <option value="thermostat2">Thermostat 2</option>
+            <option value="camera1">Camera 1</option>
+            <option value="lock1">Lock 1</option>
+            <option value="lock2">Lock 2</option>
+        </select>
+        <button type="button" onclick="showStats()">Show Stats</button>
+    </form>
+
+    <!-- Table to Display Stats -->
+    <div id="stats-container">
+        <table id="statsTable" class="stats-table" style="display:none;">
+            <thead>
+                <tr>
+                    <th>Stat Type</th>
+                    <th>Value</th>
+                </tr>
+            </thead>
+            <tbody id="statsTableBody">
+            </tbody>
+        </table>
+    </div>
+{% endblock %}

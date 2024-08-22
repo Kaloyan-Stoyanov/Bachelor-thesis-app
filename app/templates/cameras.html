@@ -1,0 +1,8 @@
+<!-- templates/cameras.html -->
+{% extends "base.html" %}
+
+{% block content %}
+    <h2>Control Cameras</h2>
+    <button class="device-button" onclick="toggleDevice('camera1')">Toggle Camera 1</button>
+    <p id="camera1-status" class="status-text">Camera 1 Status: Unknown</p>
+{% endblock %}

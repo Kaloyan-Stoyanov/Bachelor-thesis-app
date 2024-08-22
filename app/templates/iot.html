@@ -1,0 +1,60 @@
+<!-- templates/iot.html -->
+{% extends "base.html" %}
+
+{% block content %}
+    <h2>IoT Devices</h2>
+    <div class="device-grid">
+        <!-- Light 1 Control Box -->
+        <div class="device-box">
+            <h3>Light 1</h3>
+            <button class="device-button" onclick="toggleDevice('light1')">Toggle Light 1</button>
+            <p id="light1-status" class="status-text">Light 1 Status: Unknown</p>
+        </div>
+
+        <!-- Light 2 Control Box -->
+        <div class="device-box">
+            <h3>Light 2</h3>
+            <button class="device-button" onclick="toggleDevice('light2')">Toggle Light 2</button>
+            <p id="light2-status" class="status-text">Light 2 Status: Unknown</p>
+        </div>
+
+        <!-- Thermostat 1 Control Box -->
+        <div class="device-box">
+            <h3>Thermostat 1</h3>
+            <button class="device-button" onclick="getDeviceStatus('thermostat1')">Get Thermostat 1 Status</button>
+            <p id="thermostat1-status" class="status-text">Thermostat 1 Status: Unknown</p>
+            <input type="number" id="thermostat1-temp" placeholder="Set Temp for Thermostat 1" min="10" max="30">
+            <button class="device-button" onclick="setTemperature('thermostat1')">Set Thermostat 1 Temperature</button>
+        </div>
+
+        <!-- Thermostat 2 Control Box -->
+        <div class="device-box">
+            <h3>Thermostat 2</h3>
+            <button class="device-button" onclick="getDeviceStatus('thermostat2')">Get Thermostat 2 Status</button>
+            <p id="thermostat2-status" class="status-text">Thermostat 2 Status: Unknown</p>
+            <input type="number" id="thermostat2-temp" placeholder="Set Temp for Thermostat 2" min="10" max="30">
+            <button class="device-button" onclick="setTemperature('thermostat2')">Set Thermostat 2 Temperature</button>
+        </div>
+
+        <!-- Camera 1 Control Box -->
+        <div class="device-box">
+            <h3>Camera 1</h3>
+            <button class="device-button" onclick="toggleDevice('camera1')">Toggle Camera 1</button>
+            <p id="camera1-status" class="status-text">Camera 1 Status: Unknown</p>
+        </div>
+
+        <!-- Lock 1 Control Box -->
+        <div class="device-box">
+            <h3>Lock 1</h3>
+            <button class="device-button" onclick="toggleDevice('lock1')">Toggle Lock 1</button>
+            <p id="lock1-status" class="status-text">Lock 1 Status: Unknown</p>
+        </div>
+
+        <!-- Lock 2 Control Box -->
+        <div class="device-box">
+            <h3>Lock 2</h3>
+            <button class="device-button" onclick="toggleDevice('lock2')">Toggle Lock 2</button>
+            <p id="lock2-status" class="status-text">Lock 2 Status: Unknown</p>
+        </div>
+    </div>
+{% endblock %}
