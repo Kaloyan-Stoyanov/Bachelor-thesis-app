@@ -10,13 +10,17 @@ Features
 2. Setup        
         
 2.1. In root folder, create a virtual environment:  
-- python -m venv venv   
+- python -m venv venv     
+   
 2.2 Activate environment:    
-- venv/Scripts/Activate  
+- venv/Scripts/Activate    
+   
 2.3. Install the required dependencies:    
-- pip install -r requirements.txt   
+- pip install -r requirements.txt     
+   
 2.4. Run the application:   
-- py run.py    
+- py run.py      
+   
 The app will be available at http://127.0.0.1:5000    
      
 3. Usage
@@ -31,9 +35,11 @@ The app will be available at http://127.0.0.1:5000
 4.2. To run end-to-end tests using Playwright
 4.2.1. Install playwright:
 - pip install playwright
-- playwright install
+- playwright install   
+   
 4.2.2. Start the application:
-- py run.py 
-4.2.3. Open a new terminal in root folder, activate environment, and run test:
-- venv/Scripts/Activate
-- pytest test_e2e.py
+- py run.py   
+   
+4.2.3. Open a new terminal in root folder, activate environment, and run test:  
+- venv/Scripts/Activate  
+- pytest test_e2e.py   
